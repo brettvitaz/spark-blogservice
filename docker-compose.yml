@@ -1,0 +1,10 @@
+postgres:
+  restart: always
+  ports:
+  - 5432:5432/tcp
+  environment:
+    POSTGRES_PASSWORD: abc123
+  labels:
+    project: blogservice
+    purpose: postgres
+  image: postgres
